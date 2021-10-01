@@ -2,10 +2,11 @@ package stripcookies_test
 
 import (
 	"context"
-	"github.com/nilskohrs/traefik-stripcookie"
 	"net/http"
 	"net/http/httptest"
 	"testing"
+
+	"github.com/nilskohrs/traefik-stripcookie"
 )
 
 func TestDemo(t *testing.T) {
