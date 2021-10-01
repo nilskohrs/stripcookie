@@ -1,4 +1,4 @@
-package traefik_stripcookie_test
+package stripcookie_test
 
 import (
 	"context"
@@ -6,17 +6,17 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/nilskohrs/traefik-stripcookie"
+	"github.com/nilskohrs/stripcookie"
 )
 
 func TestDemo(t *testing.T) {
-	cfg := traefik_stripcookie.CreateConfig()
+	cfg := stripcookie.CreateConfig()
 	cfg.Cookies = []string{"testCookie", "otherCookie"}
 
 	ctx := context.Background()
 	next := http.HandlerFunc(func(rw http.ResponseWriter, req *http.Request) {})
 
-	handler, err := traefik_stripcookie.New(ctx, next, cfg, "stripcookie-plugin")
+	handler, err := stripcookie.New(ctx, next, cfg, "stripcookie-plugin")
 	if err != nil {
 		t.Fatal(err)
 	}

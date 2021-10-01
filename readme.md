@@ -1,5 +1,5 @@
-# Cookie strip
-Cookie strip is a middleware plugin for [Traefik](https://github.com/traefik/traefik) which strips cookies by name from a request
+# Stripcookie
+Stripcookie is a middleware plugin for [Traefik](https://github.com/traefik/traefik) which strips cookies by name from a request
 
 ### Configuration
 
@@ -11,9 +11,9 @@ pilot:
 
 experimental:
   plugins:
-    stripcookies:
-      moduleName: github.com/nilskohrs/traefik-stripcookies
-      version: v0.0.2
+    stripcookie:
+      moduleName: github.com/nilskohrs/stripcookie
+      version: v0.0.3
 ```
 
 ### Dynamic
@@ -22,7 +22,8 @@ experimental:
 http:
   middlewares:
     strip-foo:
-      stripcookies:
-        - cookieName
-        - otherCookieName
+      stripcookie:
+        cookies:
+          - cookieName
+          - otherCookieName
 ```
