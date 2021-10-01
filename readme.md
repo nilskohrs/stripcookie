@@ -13,7 +13,7 @@ experimental:
   plugins:
     stripcookie:
       moduleName: github.com/nilskohrs/stripcookie
-      version: v0.0.3
+      version: v0.0.4
 ```
 
 ### Dynamic
