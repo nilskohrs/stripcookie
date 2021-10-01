@@ -1,7 +1,7 @@
 displayName: Strip request cookies
 type: middleware
 
-import: github.com/nilskohrs/traefik-stripcookie
+import: github.com/nilskohrs/stripcookie
 
 summary: 'Stripping request cookies by name'
 
