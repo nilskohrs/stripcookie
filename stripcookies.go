@@ -1,5 +1,5 @@
-// Package stripcookies a plugin to strip cookies.
-package stripcookies
+// Package traefik_stripcookie a plugin to strip cookies.
+package traefik_stripcookie
 
 import (
 	"context"
