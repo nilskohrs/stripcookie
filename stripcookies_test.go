@@ -28,7 +28,7 @@ func TestDemo(t *testing.T) {
 		t.Fatal(err)
 	}
 	req.Header.Add("Cookie", "testCookie=testValue; testCookie2=testValue2; testCookie3=testValue3")
-	req.Header.Add("Cookie", "testCookie=testValue; otherCookie=otherValue")
+	req.Header.Add("Cookie", "testCookie=testValue; otherCookie=otherValue==abc")
 
 	handler.ServeHTTP(recorder, req)
 
