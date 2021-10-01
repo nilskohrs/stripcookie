@@ -1,3 +1,4 @@
+// Package stripcookies a plugin to strip cookies.
 package stripcookies
 
 import (
