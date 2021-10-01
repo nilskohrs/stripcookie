@@ -13,7 +13,7 @@ experimental:
   plugins:
     stripcookies:
       moduleName: github.com/nilskohrs/traefik-stripcookies
-      version: v0.0.1
+      version: v0.0.2
 ```
 
 ### Dynamic
