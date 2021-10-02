@@ -27,12 +27,12 @@ func TestDemo(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	req.Header.Add("Cookie", "testCookie=testValue; testCookie2=testValue2; testCookie3=testValue3")
+	req.Header.Add("Cookie", "testCookie=testValue; testCookie2=testValue2; test Cookie3=testValue3")
 	req.Header.Add("Cookie", "testCookie=testValue; otherCookie=otherValue==abc")
 
 	handler.ServeHTTP(recorder, req)
 
-	assertCookies(t, req, "testCookie2=testValue2; testCookie3=testValue3")
+	assertCookies(t, req, "testCookie2=testValue2; test Cookie3=testValue3")
 }
 
 func assertCookies(t *testing.T, req *http.Request, expected string) {

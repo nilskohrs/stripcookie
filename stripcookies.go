@@ -37,7 +37,7 @@ func New(ctx context.Context, next http.Handler, config *Config, name string) (h
 		cookies:     config.Cookies,
 		next:        next,
 		name:        name,
-		splitRegexp: regexp.MustCompile(` *([^=; ]+)=[^;]+`),
+		splitRegexp: regexp.MustCompile(` *([^=;]+?) *=[^;]+`),
 	}, nil
 }
 
