@@ -7,13 +7,13 @@ Stripcookie is a middleware plugin for [Traefik](https://github.com/traefik/trae
 
 ```yaml
 pilot:
-  token: xxxxx
+  token: "xxxxx"
 
 experimental:
   plugins:
     stripcookie:
-      moduleName: github.com/nilskohrs/stripcookie
-      version: v0.0.5
+      moduleName: "github.com/nilskohrs/stripcookie"
+      version: "v0.1.0"
 ```
 
 ### Dynamic
