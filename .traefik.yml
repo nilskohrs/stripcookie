@@ -1,7 +1,7 @@
 displayName: Strip request cookies
 type: middleware
 
-import: github.com/nilskohrs/stripcookie
+import: github.com/klarrio-kpn-dsh/stripcookie
 
 summary: 'Stripping request cookies by name'
 

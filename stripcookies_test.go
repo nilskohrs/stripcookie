@@ -6,7 +6,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/nilskohrs/stripcookie"
+	"github.com/klarrio-kpn-dsh/stripcookie"
 )
 
 func TestDemo(t *testing.T) {

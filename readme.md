@@ -12,7 +12,7 @@ pilot:
 experimental:
   plugins:
     stripcookie:
-      moduleName: "github.com/nilskohrs/stripcookie"
+      moduleName: "github.com/klarrio-kpn-dsh/stripcookie"
       version: "v0.1.0"
 ```
 
